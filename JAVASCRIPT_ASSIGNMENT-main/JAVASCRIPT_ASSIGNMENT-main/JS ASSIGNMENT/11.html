@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- • Task 1:
+    • Write a program that changes the background color of a webpage after 5
+    secondsusing setTimeout(). -->
+
+    <h1>  Hello World</h1>
+
+    <button>click here </button>
+
+    <div></div>
+
+    <script>
+        // let btn = document.querySelector('button');
+
+        // let h11 = document.querySelector('h1')
+
+        // btn.addEventListener("click",function abc(){
+        //     setTimeout(changebgcolor,2000)
+        //     });
+    
+        // function changebgcolor()
+        // {
+        //     h11.style.backgroundColor = "blue"
+        // }
+
+
+
+        // • Task 2:
+        // • Create a digital clock that updates every second using setInterval()
+
+
+        function clock()
+        {
+            let d1 = document.querySelector('div')
+            let x = new Date();
+            let y= x.toString();
+            let z = y.slice(15,24)
+            d1.innerHTML = z;
+            setInterval(clock) 
+        }
+        
+        clock()
+
+        
+
+    </script>
+    
+</body>
+</html>
